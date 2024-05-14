@@ -37,8 +37,8 @@ function Evaluacion () {
           <div className="h-[47px] w-[209px] relative rounded-8xs bg-darkslateblue hidden" />
           <div className="relative z-[2]">Evaluación. Configuración</div>
         </div>
-        <div className="!m-[0] absolute top-[-24px] right-[11px] rounded-8xs bg-cornflowerblue flex flex-row items-start justify-start pt-[15px] px-[26px] pb-4 z-[1]">
-          <div className="h-[47px] w-[165px] relative rounded-8xs bg-cornflowerblue hidden" />
+        <div className="!m-[0] absolute top-[-24px] right-[11px] rounded-8xs  bg-cornflowerblue-100 flex flex-row items-start justify-start pt-[15px] px-[26px] pb-4 z-[1]">
+          <div className="h-[47px] w-[165px] relative rounded-8xs  bg-cornflowerblue-100 hidden" />
           <div className="relative inline-block min-w-[110px] z-[2]">
             CONFIGURACIÓN
           </div>

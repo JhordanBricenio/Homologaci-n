@@ -98,6 +98,15 @@ export default {
       mq450: {
         raw: "screen and (max-width: 450px)",
       },
+      mq725: {
+        raw: "screen and (max-width: 725px)",
+      },
+      mq650: {
+        raw: "screen and (max-width: 650px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
     },
   },
   plugins: [],

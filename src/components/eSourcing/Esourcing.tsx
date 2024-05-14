@@ -6,15 +6,10 @@ import {
   Select,
   InputLabel,
   MenuItem,
-  FormHelperText,
   FormControl,
 } from "@mui/material";
 
-import arrowdownwardfilled from "../../assets/images/evalaucion/arrowdropdownfilled.svg";
 import iconsmorevert from "../../assets/images/evalaucion/iconsmore-vert-24px.svg";
-import chevronleftfilled from "../../assets/images/evalaucion/chevronleftfilled.svg";
-import chevronrigthfilled from "../../assets/images/evalaucion/chevronrightfilled.svg";
-import hiddensvg from "../../assets/images/evalaucion/-hidden-1.svg";
 import SearchIcon from "@mui/icons-material/Search";
 
 import Table from "./Table";
@@ -121,35 +116,29 @@ function Esourcing() {
             </div>
             <div className="w-[1086px] flex flex-row items-end justify-start gap-[6px] max-w-full mq1050:flex-wrap">
               <FormControl sx={{ m: 1, minWidth: 180 }} size="small">
-                <InputLabel id="demo-select-small-label">Age</InputLabel>
+                <InputLabel id="demo-select-small-label">Rubro</InputLabel>
                 <Select
                   labelId="demo-select-small-label"
                   id="demo-select-small"
                   label="Age"
                   size="small"
                 >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>Subcategoría1</MenuItem>
+                  <MenuItem value={20}>Subcategoría2</MenuItem>
+                  <MenuItem value={30}>Subcategoría3</MenuItem>
                 </Select>
               </FormControl>
               <FormControl sx={{ m: 1, minWidth: 180 }} size="small">
-                <InputLabel id="demo-select-small-label">Age</InputLabel>
+                <InputLabel id="demo-select-small-label">País</InputLabel>
                 <Select
                   labelId="demo-select-small-label"
                   id="demo-select-small"
                   label="Age"
                   size="small"
                 >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>Perú</MenuItem>
+                  <MenuItem value={20}>Bolivia</MenuItem>
+                  <MenuItem value={30}>Chile</MenuItem>
                 </Select>
               </FormControl>
               <TextField
@@ -216,7 +205,7 @@ function Esourcing() {
                 </div>
                 <div className="self-stretch shadow-[0px_4px_7.6px_rgba(0,_0,_0,_0.25)] rounded-8xs bg-white-color box-border flex flex-row items-start justify-start pt-[49px] pb-[23px] pr-[13px] pl-[37px] max-w-full z-[1] mt-[-19px] border-[1px] border-solid border-gray-200">
                   <div className="h-80 w-[919px] relative shadow-[0px_4px_7.6px_rgba(0,_0,_0,_0.25)] rounded-8xs bg-white-color box-border hidden max-w-full border-[1px] border-solid border-gray-200" />
-                  <Table tableHead="Razón social" />
+                  <Table />
                 </div>
               </div>
               <div className="self-stretch flex flex-col items-start justify-start max-w-full">
@@ -246,11 +235,7 @@ function Esourcing() {
                       ),
                     }}
                   />
-                  <Table
-                    tableHead="RAZÓN SOCIAL"
-                    body2Flex="unset"
-                    body2Width="865px"
-                  />
+                  <Table  />
                 </div>
               </div>
             </div>

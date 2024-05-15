@@ -1,10 +1,7 @@
 import { FunctionComponent } from "react";
 import {
   Button,
-  TextField,
-  InputAdornment,
-  Icon,
-  IconButton,
+  TextField
 } from "@mui/material";
 
 const Page7: FunctionComponent = () => {

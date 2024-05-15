@@ -1,39 +1,67 @@
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+import { Radio, Rating } from "@mui/material";
 
-const columns: GridColDef[] = [
-  { field: "RazónSocial", headerName: "Razón Social", width: 70 },
-  { field: "RUC", headerName: "RUC", width: 130 },
-  { field: "HOMOL", headerName: "HOMOL", width: 130 },
-  { field: "EvalServ", headerName: "Eval.Serv.", type: "number", width: 90 },
-  {field: "VerCatálogo",headerName: "Ver Catálogo", width: 160 },
-];
+function createData(ruc: number, name: string, homol: string) {
+  return { ruc, name, homol };
+}
 
 const rows = [
-  { id: 1, RazónSocial: "Proveedor 1", RUC: "0922828111", EvalServ: 35 ,VerCatálogo: "Ver Catálogo"},
-  { id: 2, RazónSocial: "Proveedor 2", RUC: "0922828111", EvalServ: 42 ,VerCatálogo: "Ver Catálogo"},
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, RazónSocial: "Proveedor 3", RUC: "0922828111", EvalServ: 16 ,VerCatálogo: "Ver Catálogo"},
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, RazónSocial: "Proveedor 4", RUC: "0922828111", EvalServ: 44 ,VerCatálogo: "Ver Catálogo"},
-  { id: 8, RazónSocial: "Proveedor 5", RUC: "0922828111", EvalServ: 36,VerCatálogo: "Ver Catálogo"},
-  { id: 9, RazónSocial: "Proveedor 6", RUC: "0922828111", EvalServ: 65 ,VerCatálogo: "Ver Catálogo"},
+  createData(1828383121, "Nombre 1", "hhh"),
+  createData(1828383121, "Nombre 2", "h"),
+  createData(1828383121, "Nombre 3", "hh"),
 ];
 
-export default function Table() {
+export default function TableBusqueda() {
   return (
-    <div style={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: { page: 0, pageSize: 5 },
-          },
-        }}
-        pageSizeOptions={[5, 10]}
-        checkboxSelection
-      />
-    </div>
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 400 }} aria-label="caption table">
+        <caption>Últimos procesos</caption>
+        <TableHead style={{ background: "#1B3E85" }}>
+          <TableRow style={{ height: "20px", fontSize: "8px" }}>
+            <TableCell style={{ color: "#ffffff", width: "20px" }}></TableCell>
+            <TableCell style={{ color: "#ffffff" }}>RAZON SOCIAL </TableCell>
+            <TableCell style={{ color: "#ffffff" }}>RUC</TableCell>
+            <TableCell style={{ color: "#ffffff" }}>HOMOL</TableCell>
+            <TableCell style={{ color: "#ffffff" }}>EVAL.SERV.</TableCell>
+            <TableCell style={{ color: "#ffffff" }}>REFERENCIA EXT.</TableCell>
+            <TableCell style={{ color: "#ffffff" }}>VER CAT.</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow key={row.ruc}>
+              <TableCell component="th" scope="row">
+                {/* Añadir un checkbox */}
+                <input type="checkbox" />
+              </TableCell>
+              <TableCell>Proveedor</TableCell>
+              <TableCell>{row.ruc}</TableCell>
+              <TableCell>
+                {/* Checkbox circular */}
+                <Radio color="success" />
+              </TableCell>
+              <TableCell>
+                <Rating name="read-only" defaultValue={2.5} />
+              </TableCell>
+              <TableCell>
+                <Rating name="read-only" value={2.5} precision={0.5} />
+              </TableCell>
+
+              <TableCell>
+                <a className="text-blue-500 underline" href="">
+                  Ver showcase
+                </a>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
   );
 }

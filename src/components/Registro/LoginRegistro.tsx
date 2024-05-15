@@ -10,7 +10,7 @@ import {
 
 export function LoginRegistro () {
   return (
-    <div className="w-full relative bg-whitesmoke overflow-hidden flex flex-col items-center justify-start pt-[35.6px] px-5 pb-[45px] box-border tracking-[normal] leading-[normal]">
+    <div className="w-full relative bg-black overflow-hidden flex flex-col items-center justify-start pt-[35.6px] px-5 pb-[45px] box-border tracking-[normal] leading-[normal]">
     <div className="w-[576px] flex flex-row items-start justify-center py-0 pr-px pl-0 box-border max-w-full">
       <Button
         className="h-[48.5px] w-[175px] z-[1]"

@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 
-const Page2p1: FunctionComponent = () => {
+const Perfil: FunctionComponent = () => {
   return (
     <div className="w-[1253px] max-w-full flex flex-row items-start justify-start tracking-[normal] leading-[normal]">
       <section className="flex-1 flex flex-col items-start justify-start pt-0 px-[22px] pb-[25px] box-border relative gap-[50px] max-w-full text-left text-sm text-white font-cabin mq725:gap-[25px]">
@@ -345,4 +345,4 @@ const Page2p1: FunctionComponent = () => {
   );
 };
 
-export default Page2p1;
+export default Perfil;

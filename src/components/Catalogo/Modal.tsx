@@ -79,9 +79,6 @@ const GroupComponent: FunctionComponent<GroupComponentType> = () => {
             Fecha de actualización
           </div>
         </div>
-        <Box sx={{ width: "100%" }}>
-          <LinearProgress />
-        </Box>
       </div>
     </div>
   );

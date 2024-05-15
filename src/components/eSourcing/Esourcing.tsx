@@ -114,8 +114,8 @@ function Esourcing() {
                 </div>
               </div>
             </div>
-            <div className="w-[1086px] flex flex-row items-end justify-start gap-[6px] max-w-full mq1050:flex-wrap">
-              <FormControl sx={{ m: 1, minWidth: 180 }} size="small">
+            <div className="w-[1086px] flex flex-row items-end justify-start gap-[10px] mt-2 max-w-full mq1050:flex-wrap">
+              <FormControl sx={{ minWidth: 180 }} size="small">
                 <InputLabel id="demo-select-small-label">Rubro</InputLabel>
                 <Select
                   labelId="demo-select-small-label"
@@ -128,7 +128,7 @@ function Esourcing() {
                   <MenuItem value={30}>Subcategoría3</MenuItem>
                 </Select>
               </FormControl>
-              <FormControl sx={{ m: 1, minWidth: 180 }} size="small">
+              <FormControl sx={{ minWidth: 180 }} size="small">
                 <InputLabel id="demo-select-small-label">País</InputLabel>
                 <Select
                   labelId="demo-select-small-label"
@@ -142,10 +142,11 @@ function Esourcing() {
                 </Select>
               </FormControl>
               <TextField
-                className="[border:none] bg-[transparent] h-14 w-[205px] z-[1]"
+               
                 color="primary"
                 label="Search"
-                variant="standard"
+                variant="outlined"
+                size="small"
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
@@ -199,7 +200,7 @@ function Esourcing() {
                   <div className="rounded-8xs bg-darkslateblue flex flex-row items-start justify-start pt-[11px] pb-3 pr-[30px] pl-[31px] z-[2]">
                     <div className="h-[39px] w-[145px] relative rounded-8xs bg-darkslateblue hidden" />
                     <div className="relative font-semibold inline-block min-w-[84px] z-[1]">
-                      Promociones
+                      Promocionados
                     </div>
                   </div>
                 </div>

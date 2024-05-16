@@ -1,22 +1,27 @@
 import {
-    Button,
-    TextField,
-    InputAdornment,
-    Icon,
-    Select,
-    InputLabel,
-    MenuItem,
-    FormControl,
-  } from "@mui/material";
-  
-  import iconsmorevert from "../../assets/images/evalaucion/iconsmore-vert-24px.svg";
-  import SearchIcon from "@mui/icons-material/Search";
-  
-  import Table from "../eSourcing/Table";
-  function Ecosistema() {
-    return (
-      <div className="w-full relative bg-whitesmoke overflow-hidden flex flex-col items-start justify-start pt-[75px] px-[100px] pb-[106px] box-border tracking-[normal] leading-[normal] lg:pl-[50px] lg:pr-[50px] lg:box-border mq750:pl-[25px] mq750:pr-[25px] mq750:box-border">
-        <div className="w-10 h-[30px] absolute !m-[0] top-[35px] left-[100px] z-[2]">
+  Button,
+  TextField,
+  InputAdornment,
+  Icon,
+  Select,
+  InputLabel,
+  MenuItem,
+  FormControl,
+} from "@mui/material";
+
+import iconsmorevert from "../../assets/images/evalaucion/iconsmore-vert-24px.svg";
+import SearchIcon from "@mui/icons-material/Search";
+
+import Table from "../eSourcing/Table";
+import Nav from "../Nav/Nav";
+function Ecosistema() {
+  return (
+    <div className="flex flex-row mt-60">
+      <div >
+        <Nav />
+      </div>
+      <div className="w-full relative bg-whitesmoke overflow-hidden flex flex-col items-start justify-start pt-[30px] px-[20px] pb-[106px] box-border tracking-[normal] leading-[normal] lg:pl-[50px] lg:pr-[50px] lg:box-border mq750:pl-[25px] mq750:pr-[25px] mq750:box-border">
+        <div className="w-10 h-[30px] absolute !m-[0] top-[0px] left-[5px] z-[2]">
           <div className="absolute top-[0px] left-[6.6px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[50%] bg-white-color w-7 h-[29.4px]" />
           <div className="absolute top-[0px] left-[0px] h-full flex flex-col items-center justify-center py-0 px-0 box-border w-full z-[1]">
             <div className="w-10 h-10 rounded-81xl overflow-hidden shrink-0 flex flex-row items-center justify-center">
@@ -38,15 +43,15 @@ import {
               Ecosistema digital de negocios: Proveedores
             </div>
           </div>
-          <div className="!m-[0] absolute top-[-29px] right-[23px] rounded-8xs bg-cornflowerblue-100 flex flex-row items-start justify-start pt-[15px] px-[26px] pb-4 z-[1]">
-            <div className="h-[47px] w-[165px] relative rounded-8xs bg-cornflowerblue-100 hidden" />
+          <div className="!m-[0] absolute top-[-29px] right-[23px] rounded-8xs bg-darkslateblue flex flex-row items-start justify-start pt-[15px] px-[26px] pb-4 z-[1]">
+            <div className="h-[47px] w-[165px] relative rounded-8xs bg-darkslateblue hidden" />
             <div className="relative inline-block min-w-[110px] z-[2]">
-              CONFIGURACIÓN
+              USUARIO YURA
             </div>
           </div>
           <section className="flex-1 rounded-8xs bg-white-color flex flex-col items-start justify-start pt-[67px] px-[13px] pb-[94px] box-border gap-[27px] max-w-full text-left text-sm text-white-color font-typography-body2 lg:pt-11 lg:pb-[61px] lg:box-border mq750:pt-[29px] mq750:pb-10 mq750:box-border">
             <div className="w-[1203px] h-[1152px] relative rounded-8xs bg-white-color hidden max-w-full" />
-  
+
             <div className="self-stretch flex flex-col items-start justify-start gap-[12px] max-w-full">
               <div className="self-stretch flex flex-row flex-wrap items-end justify-start gap-[55px] max-w-full mq750:gap-[27px]">
                 <div className="w-[531px] flex flex-row items-start justify-start max-w-full [row-gap:20px] mq750:flex-wrap">
@@ -67,7 +72,7 @@ import {
                   >
                     Favoritos de la empresa
                   </Button>
-                  <div className="h-[29px] flex-1rounded-tl-none rounded-tr-8xs rounded-br-8xs rounded-bl-none bg-cornflowerblue-100  flex flex-row items-center justify-start py-3.5 px-4 min-w-[179px] z-[2] border-[1px] border-solid border-grey-dark">
+                  <div className="h-[29px] flex-1rounded-tl-none rounded-tr-8xs rounded-br-8xs rounded-bl-none bg-cornflowerblue  flex flex-row items-center justify-start py-3.5 px-4 min-w-[179px] z-[2] border-[1px] border-solid border-grey-dark">
                     <p>Todo el ecosistema digital de negocios</p>
                   </div>
                 </div>
@@ -138,7 +143,6 @@ import {
                   </Select>
                 </FormControl>
                 <TextField
-                 
                   color="primary"
                   label="Palabra clave"
                   variant="outlined"
@@ -153,8 +157,8 @@ import {
                     ),
                   }}
                 />
-               <div className="flex gap-5 ml-5 ">
-               <Button
+                <div className="flex gap-5 ml-5 ">
+                  <Button
                     className="h-8 shadow-[0px_4px_9.7px_rgba(0,_0,_0,_0.25)] z-[1]"
                     variant="contained"
                     sx={{
@@ -169,26 +173,26 @@ import {
                   >
                     APLICAR FILTROS
                   </Button>
-                <Button
-                  className="h-8 w-[143px] shadow-[0px_4px_9.7px_rgba(0,_0,_0,_0.25)] z-[1]"
-                  variant="contained"
-                  sx={{
-                    textTransform: "none",
-                    color: "#fff",
-                    fontSize: "10px",
-                    background: "#2299e4",
-                    borderRadius: "5px",
-                    "&:hover": { background: "#2299e4" },
-                    width: 143,
-                    height: 32,
-                  }}
-                >
-                  RESETEAR
-                </Button>
-               </div>
+                  <Button
+                    className="h-8 w-[143px] shadow-[0px_4px_9.7px_rgba(0,_0,_0,_0.25)] z-[1]"
+                    variant="contained"
+                    sx={{
+                      textTransform: "none",
+                      color: "#fff",
+                      fontSize: "10px",
+                      background: "#2299e4",
+                      borderRadius: "5px",
+                      "&:hover": { background: "#2299e4" },
+                      width: 143,
+                      height: 32,
+                    }}
+                  >
+                    RESETEAR
+                  </Button>
+                </div>
               </div>
             </div>
-  
+
             <div className="self-stretch flex flex-row items-start justify-start gap-[26px] max-w-full">
               <div className="flex-1 flex flex-col items-start justify-start gap-[27px] max-w-[calc(100%_-_252px)] mq1050:max-w-full">
                 <div className="self-stretch flex flex-col items-start justify-start max-w-full">
@@ -233,7 +237,7 @@ import {
                         ),
                       }}
                     />
-                    <Table  />
+                    <Table />
                   </div>
                 </div>
               </div>
@@ -258,7 +262,7 @@ import {
                             <p className="m-0">RUC 0938211811</p>
                           </div>
                         </div>
-                        <div className="relative [text-decoration:underline] font-semibold text-cornflowerblue-100 inline-block min-w-[88px] z-[3]">
+                        <div className="relative underline font-semibold text-cornflowerblue inline-block min-w-[88px] z-[3]">
                           Ver showcase
                         </div>
                       </div>
@@ -277,7 +281,7 @@ import {
                               <p className="m-0">RUC 0938211811</p>
                             </div>
                           </div>
-                          <div className="relative [text-decoration:underline] font-semibold text-cornflowerblue-100 inline-block min-w-[88px] z-[3]">
+                          <div className="relative underline font-semibold text-cornflowerblue inline-block min-w-[88px] z-[3]">
                             Ver showcase
                           </div>
                         </div>
@@ -297,7 +301,7 @@ import {
                               <p className="m-0">RUC 0938211811</p>
                             </div>
                           </div>
-                          <div className="relative [text-decoration:underline] font-semibold text-cornflowerblue-100 inline-block min-w-[88px] z-[3]">
+                          <div className="relative underline font-semibold text-cornflowerblue inline-block min-w-[88px] z-[3]">
                             Ver showcase
                           </div>
                         </div>
@@ -316,7 +320,7 @@ import {
                             <p className="m-0">RUC 0938211811</p>
                           </div>
                         </div>
-                        <div className="relative [text-decoration:underline] font-semibold text-cornflowerblue-100 inline-block min-w-[88px] z-[3]">
+                        <div className="relative underline font-semibold text-cornflowerblue inline-block min-w-[88px] z-[3]">
                           Ver showcase
                         </div>
                       </div>
@@ -334,7 +338,7 @@ import {
                             <p className="m-0">RUC 0938211811</p>
                           </div>
                         </div>
-                        <div className="relative [text-decoration:underline] font-semibold text-cornflowerblue-100 inline-block min-w-[88px] z-[3]">
+                        <div className="relative underline font-semibold text-cornflowerblue inline-block min-w-[88px] z-[3]">
                           Ver showcase
                         </div>
                       </div>
@@ -348,8 +352,8 @@ import {
           </section>
         </main>
       </div>
-    );
-  }
-  
-  export default Ecosistema;
-  
+    </div>
+  );
+}
+
+export default Ecosistema;

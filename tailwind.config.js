@@ -7,6 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
+
+        whitesmoke: "#eee",
+        steelblue: {
+          "100": "#639ec2",
+          "200": "#4a94c0",
+          "300": "#0067a3",
+        },
+        white: "#fff",
+        
         whitesmoke: "#f3f3f3",
         white: "#fff",
         black: "#000",
@@ -47,6 +56,15 @@ export default {
         divider: "rgba(0, 0, 0, 0.12)",
         deepskyblue: "#3bb3fc",
         darkgray: "#acacac",
+
+
+        whitesmoke: "#ededed",
+        white: "#fff",
+        gold: "#ffcc02",
+        red: "#ff1717",
+        limegreen: "#1dd03a",
+        black: "#000",
+        cornflowerblue: "#2299e4"
       },
       spacing: {},
       fontFamily: {

@@ -28,7 +28,7 @@ const FrameComponent: FunctionComponent = () => {
               </span>
             </div>
           </div>
-          <div className="!m-[0] absolute top-[-20px] left-[30px] rounded bg-darkslateblue-200 flex flex-col items-start justify-center py-[11.5px] pr-5 pl-6 box-border min-h-[30px] max-h-[60px] whitespace-nowrap text-sm text-white hover:bg-darkslateblue-100">
+          <div className="!m-[0] absolute top-[-20px] left-[30px] rounded bg-darkslateblue flex flex-col items-start justify-center py-[11.5px] pr-5 pl-6 box-border min-h-[30px] max-h-[60px] whitespace-nowrap text-sm text-white hover:bg-darkslateblue-100">
             <div className="relative">Breve descripción de la empresa</div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const FrameComponent: FunctionComponent = () => {
                 />
               </div>
             </div>
-            <div className="w-[30px] rounded-81xl bg-darkslateblue-200 h-[30px] flex flex-col items-center justify-center text-center text-13xl text-white">
+            <div className="w-[30px] rounded-81xl bg-darkslateblue h-[30px] flex flex-col items-center justify-center text-center text-13xl text-white">
               <div className="relative mq450:text-lgi mq750:text-7xl">+</div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const FrameComponent: FunctionComponent = () => {
               <span className="text-black"> - Subcategoría 4</span>
             </div>
           </div>
-          <div className="!m-[0] absolute top-[-20px] left-[30px] rounded bg-darkslateblue-200 flex flex-col items-start justify-center py-[11.5px] pr-5 pl-6 box-border min-h-[30px] max-h-[60px] whitespace-nowrap text-sm text-white hover:bg-darkslateblue-100">
+          <div className="!m-[0] absolute top-[-20px] left-[30px] rounded bg-darkslateblue flex flex-col items-start justify-center py-[11.5px] pr-5 pl-6 box-border min-h-[30px] max-h-[60px] whitespace-nowrap text-sm text-white hover:bg-darkslateblue-100">
             <div className="relative">Categorías CIIU en las que participa</div>
           </div>
         </div>
@@ -182,7 +182,7 @@ const FrameComponent: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="w-20 !m-[0] absolute top-[-20px] left-[30px] rounded bg-darkslateblue-200 flex flex-col items-start justify-center py-[11.5px] pr-5 pl-6 box-border min-h-[30px] max-h-[60px] text-sm text-white hover:bg-darkslateblue-100">
+          <div className="w-20 !m-[0] absolute top-[-20px] left-[30px] rounded bg-darkslateblue flex flex-col items-start justify-center py-[11.5px] pr-5 pl-6 box-border min-h-[30px] max-h-[60px] text-sm text-white hover:bg-darkslateblue-100">
             <div className="relative inline-block min-w-[32px]">Tags</div>
           </div>
         </div>

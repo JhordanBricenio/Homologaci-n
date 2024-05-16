@@ -28,9 +28,7 @@ export default function TableBusqueda() {
             <TableCell style={{ color: "#ffffff" }}>RAZON SOCIAL </TableCell>
             <TableCell style={{ color: "#ffffff" }}>RUC</TableCell>
             <TableCell style={{ color: "#ffffff" }}>HOMOL</TableCell>
-            <TableCell style={{ color: "#ffffff" }}>EVAL.SERV.</TableCell>
-            <TableCell style={{ color: "#ffffff" }}>REFERENCIA EXT.</TableCell>
-            <TableCell style={{ color: "#ffffff" }}>VER CAT.</TableCell>
+            <TableCell style={{ color: "#ffffff" }}>NOTIFICAR</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -40,22 +38,17 @@ export default function TableBusqueda() {
                 {/* Añadir un checkbox */}
                 <input type="checkbox" />
               </TableCell>
-              <TableCell>Proveedor</TableCell>
+              <TableCell>
+                <a className="text-blue-500 underline"  href="">Proveedor</a>
+              </TableCell>
               <TableCell>{row.ruc}</TableCell>
               <TableCell>
                 {/* Checkbox circular */}
                 <Radio color="success" />
               </TableCell>
               <TableCell>
-                <Rating name="read-only" defaultValue={2.5} />
-              </TableCell>
-              <TableCell>
-                <Rating name="read-only" value={2.5} precision={0.5} />
-              </TableCell>
-
-              <TableCell>
                 <a className="text-blue-500 underline" href="">
-                  Ver showcase
+                  Notificar
                 </a>
               </TableCell>
             </TableRow>

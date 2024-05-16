@@ -40,10 +40,11 @@ export function LoginRegistro () {
       </div>
       <form className="m-0 self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-3.5 box-border gap-[24px] max-w-full">
         <div className="flex flex-col items-start justify-start gap-[15px] max-w-full">
-          <div className="flex flex-row items-start justify-start py-0 px-0.5">
+          <div className="flex flex-row items-start justify-start py-0 px-1">
             <div className="relative text-sm font-roboto text-black whitespace-pre-wrap text-left z-[1]">
-              RUC 20500933618
+              RUC
             </div>
+            <input style={{borderColor: 'rgba(0, 0, 0, 0.38)'}} className="ml-4 border rounded-sm h-8 p-3 "  type="number" />
           </div>
           <div className="relative text-sm font-roboto text-black whitespace-pre-wrap text-left z-[1]">
             RAZON SOCIAL EBUSINESS INTERGHANGE ZONE SAC

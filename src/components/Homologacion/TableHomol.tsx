@@ -6,8 +6,6 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-import AttachFileIcon from "@mui/icons-material/AttachFile";
-
 function createData(ruc: number, name: string, homol: string) {
   return { ruc, name, homol };
 }
@@ -27,11 +25,9 @@ export default function TableHomol() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 400 }} aria-label="caption table">
-        <caption>Últimos procesos</caption>
         <TableHead style={{ background: "#1B3E85" }}>
           <TableRow style={{ height: "20px", fontSize: "8px" }}>
             <TableCell style={{ color: "#ffffff" }}>Activar</TableCell>
-            <TableCell style={{ color: "#ffffff" }}>Recaba Adjuntos </TableCell>
             <TableCell style={{ color: "#ffffff" }}>Predefinidas</TableCell>
             <TableCell style={{ color: "#ffffff" }}>Vencimiento</TableCell>
             <TableCell style={{ color: "#ffffff" }}>Descripción</TableCell>
@@ -43,11 +39,7 @@ export default function TableHomol() {
           {rows.map((row) => (
             <TableRow key={row.ruc}>
               <TableCell component="th" scope="row">
-                {/* Añadir un checkbox */}
                 <input type="checkbox" />
-              </TableCell>
-              <TableCell>
-                <AttachFileIcon />
               </TableCell>
               <TableCell>{row.name}</TableCell>
               <TableCell>
@@ -64,13 +56,13 @@ export default function TableHomol() {
               {/* Necesito 3 radios con label pero que se ubiqquen de manera horizontal */}
               <TableCell>
                 <input  type="radio" />
-                <label className="mr-3" htmlFor="">Área 1</label>
+                <label className="mr-3" htmlFor="">Comercial</label>
 
                 <input type="radio" />
-                <label className="mr-3" htmlFor="">Área 2</label>
+                <label className="mr-3" htmlFor="">Legal</label>
 
                 <input type="radio" />
-                <label className="mr-3" htmlFor="">Área 3</label>
+                <label className="mr-3" htmlFor="">Finaciera</label>
               </TableCell>
             </TableRow>
           ))}

@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 const FrameComponent1: FunctionComponent = () => {
   return (
     <div className="mt-[-344px] self-stretch flex flex-col items-start justify-start gap-[30px] max-w-full shrink-0 text-left text-base text-white font-inter">
-      <div className="rounded bg-darkslateblue-200 flex flex-row items-start justify-start py-[20.5px] px-6 box-border min-h-[30px] max-h-[60px] whitespace-nowrap hover:bg-darkslateblue-100">
+      <div className="rounded bg-darkslateblue flex flex-row items-start justify-start py-[20.5px] px-6 box-border min-h-[30px] max-h-[60px] whitespace-nowrap hover:bg-darkslateblue-100">
         <div className="relative inline-block min-w-[62px]">Mi Perfil</div>
       </div>
       <div className="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-0.5 box-border max-w-full text-13xl text-darkslateblue-200">
